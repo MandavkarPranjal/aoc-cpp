@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#include <cstdlib>
-#include <vector>
 using namespace std;
 
 bool isOK(vector<int> a) {
