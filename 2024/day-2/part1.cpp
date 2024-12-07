@@ -1,7 +1,4 @@
 #include <bits/stdc++.h>
-#include <cstdio>
-#include <cstdlib>
-#include <vector>
 using namespace std;
 
 const int N = 1000;
