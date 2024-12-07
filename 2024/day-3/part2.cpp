@@ -24,9 +24,16 @@ int main () {
         return -1;
     };
 
+    bool enable = true;
     int answer = 0;
-    for (int i = 0 ; i < n; i++) {
-        if (s[i] == 'm') {
+    for (int i = 0 ; i < n - 7; i++) {
+        if (s.substr(i, 4) == "do()") {
+            enable = true;
+        }
+        if (s.substr(i, 7) == "don\'t()") { // ' is a special character is use \' for it
+            enable = false;
+        }
+        if (enable && s[i] == 'm') {
             if (s[i+1] == 'u' && s[i+2] == 'l' && s[i+3] == '(') { // substr is slower
                 i += 4;
                 int x = getNumber(i);
