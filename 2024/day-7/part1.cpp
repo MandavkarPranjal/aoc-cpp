@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <cstdio>
 using namespace std;
 
 void rec(int i, long long sum, long long target, const vector<int>& v, bool& ok) {
